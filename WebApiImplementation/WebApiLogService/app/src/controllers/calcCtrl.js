@@ -3,8 +3,8 @@
 app.controller('calcCtrl', [
     '$scope', 'logResource', function ($scope, logResource) {
         $scope.operations = [{ name: '+', value: '+' }, { name: '-', value: '-' }, { name: '*', value: '*' }];
-        console.log($scope.operations)
-        $scope.result = 42;
+
+        $scope.result = undefined;
         $scope.firstNumber = 0;
         $scope.secondNumber = 0;
         $scope.selectedOperation = '';

@@ -72,6 +72,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\lib\angular-resource.min.js" />
+    <Content Include="app\lib\angular-route.min.js" />
+    <Content Include="app\lib\angular.min.js" />
+    <Content Include="app\lib\bootstrap.min.js" />
+    <Content Include="app\lib\jquery-2.1.1.min.js" />
     <Content Include="app\src\app.js" />
     <Content Include="app\src\controllers\calcCtrl.js" />
     <Content Include="app\src\controllers\logCtrl.js" />
@@ -82,6 +87,8 @@
     <Content Include="app\src\templates\calc.html" />
     <Content Include="app\src\templates\log.html" />
     <Content Include="app\src\templates\start.html" />
+    <Content Include="app\test\karma.conf.js" />
+    <Content Include="app\test\unit\controllers\calcCtrlSpecs.js" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -97,6 +104,7 @@
   <ItemGroup>
     <Content Include="packages.config" />
     <Content Include="App_Data\logEntries.json" />
+    <Content Include="app\test\package.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -104,10 +112,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="app\lib\" />
-    <Folder Include="app\test\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
