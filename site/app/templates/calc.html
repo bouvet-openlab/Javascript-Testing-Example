@@ -1,0 +1,23 @@
+﻿<div class="row">
+    <div class="well thumbnail">
+        {{feedback}}
+    </div>
+</div>
+<div class="row">
+    <form class="form-inline" role="form" name="calculator">
+        <input type="number" ng-model="firstNumber" required />
+        <select ng-model="selectedOperation" ng-options="operation.name for operation in operations" required>
+            <option value="">-- OPERATION --</option>
+        </select>
+        <input type="number" ng-model="secondNumber" required />
+        <button class="btn btn-success" ng-disabled="calculator.$invalid" ng-click="calculate()">Calculate</button>
+    </form>
+</div>
+<div class="row">
+    <div class="well thumbnail offset4 span4">
+        <h3 class="well-title">Result</h3>
+        <div class="well-calc-result">
+            {{result}}
+        </div>
+    </div>
+</div>
