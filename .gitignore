@@ -86,6 +86,9 @@ _TeamCity*
 # DotCover is a Code Coverage Tool
 *.dotCover
 
+#istanbul coverage
+WebApiImplementation/WebApiLogService/app/test/coverage
+
 # NCrunch
 *.ncrunch*
 _NCrunch_*

@@ -10,13 +10,12 @@ app.controller('calcCtrl', [
         $scope.selectedOperation = '';
 
         $scope.calculate = function () {
+
             if ($scope.selectedOperation.value == '+') {
                 $scope.result = $scope.firstNumber + $scope.secondNumber;
-                
             }
             if ($scope.selectedOperation.value == '-') {
                 $scope.result = $scope.firstNumber - $scope.secondNumber;
-                
             }
             if ($scope.selectedOperation.value == '*') {
                 $scope.result = $scope.firstNumber * $scope.secondNumber;
