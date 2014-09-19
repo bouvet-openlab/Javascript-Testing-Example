@@ -8,7 +8,9 @@ Installation instructions:
 Install NodeJs and npm, make sure npm command is available on commandline.
 
 Install the karma commandline interface:
-`npm install -g karma-cli
+```
+npm install -g karma-cli
+```
 
 If node is installed by chocolatey, add the tools directory to your path. Example: C:\Chocolatey\lib\nodejs.commandline.0.10.32\tools
 
