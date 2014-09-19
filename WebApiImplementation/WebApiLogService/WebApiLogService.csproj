@@ -72,23 +72,27 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\lib\angular-mocks.js" />
     <Content Include="app\lib\angular-resource.min.js" />
     <Content Include="app\lib\angular-route.min.js" />
     <Content Include="app\lib\angular.min.js" />
     <Content Include="app\lib\bootstrap.min.js" />
     <Content Include="app\lib\jquery-2.1.1.min.js" />
+    <Content Include="app\lib\sinon-1.10.3.js" />
     <Content Include="app\src\app.js" />
     <Content Include="app\src\controllers\calcCtrl.js" />
     <Content Include="app\src\controllers\logCtrl.js" />
     <Content Include="app\src\css\app.css" />
     <Content Include="app\src\css\bootstrap.min.css" />
     <Content Include="app\src\index.html" />
-    <Content Include="app\src\logResource.js" />
+    <Content Include="app\src\service\logResource.js" />
     <Content Include="app\src\templates\calc.html" />
     <Content Include="app\src\templates\log.html" />
     <Content Include="app\src\templates\start.html" />
     <Content Include="app\test\karma.conf.js" />
-    <Content Include="app\test\unit\controllers\calcCtrlSpecs.js" />
+    <Content Include="app\test\unit\app.spec.js" />
+    <Content Include="app\test\unit\controllers\calcCtrl.spec.js" />
+    <Content Include="app\test\unit\service\logResource.spec.js" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>

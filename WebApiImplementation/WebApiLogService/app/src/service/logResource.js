@@ -1,7 +1,7 @@
 ﻿'use strict';
 
 app.factory('logResource', ['$resource', function($resource) {
-    var logEntryResource = $resource('http://localhost:9000/service/calculationlog');
+    var logEntryResource = $resource('/service/calculationlog');
 
     return {
         getAllLogEntries: function() {
