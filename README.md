@@ -23,4 +23,5 @@ npm install karma-phantomjs-launcher --save-dev
 npm install karma-opera-launcher --save-dev
 npm install karma-ie-launcher --save-dev
 npm install karma-coverage --save-dev
+npm install karma-ng-html2js-preprocessor --save-dev
 ```

@@ -1,5 +1,9 @@
-﻿<div class="well thumbnail span12">
-    {{feedback}}
+﻿<div>
+    <div class="well thumbnail span12">
+        {{feedback}}
+    </div>
+    <feedback feedback="{{feedback}}" />
+    <feedback-template feedback="{{feedback}}" />
 </div>
 <form class="form-inline span12" role="form" name="calculator">
     <input type="number" ng-model="firstNumber" required />
