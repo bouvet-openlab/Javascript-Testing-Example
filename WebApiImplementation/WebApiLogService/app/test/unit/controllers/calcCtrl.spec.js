@@ -12,7 +12,7 @@ describe('Calc controller', function () {
         scope = $rootScope.$new();
         $controllerConstructor = $controller;
         $q = _$q_;
-        logResourceMock = sinon.stub({ getAllLogEntries: function () { }, addLogEntry: function (entryString) { } });
+        logResourceMock = sinon.stub({ getAllLogEntries: function () { }, addLogEntry: function () { } });
     }));
 
     it('Exists - ice breaker', function() {
@@ -32,7 +32,16 @@ describe('Calc controller', function () {
         expect(scope.operations).toEqual([{ name: '+', value: '+' }, { name: '-', value: '-' }, { name: '*', value: '*' }]);
     });
 
-    // Should call logresource
+    it('Should call logResource.addLogEntry with the feedback value as parameter', function() {
+
+        var sut = $controllerConstructor('calcCtrl', { $scope: scope, logResource: logResourceMock });
+        scope.selectedOperation = { name: '+', value: '+' };
+        scope.firstNumber = 2;
+        scope.secondNumber = 3;
+        scope.calculate();
+
+        expect(logResourceMock.addLogEntry.calledWith(scope.feedback)).toBe(true);
+    });
 
     it('Should calculate add', function() {
 
