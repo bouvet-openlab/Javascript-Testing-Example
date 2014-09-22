@@ -23,8 +23,6 @@ describe('Log resource service', function() {
 
         $httpBackend.flush();
 
-        console.log(result);
-
         expect(result).toBe(result);
     }));
 });
