@@ -97,6 +97,7 @@
     <Content Include="app\test\unit\app.spec.js" />
     <Content Include="app\test\unit\controllers\calcCtrl.spec.js" />
     <Content Include="app\test\unit\controllers\logCtrl.spec.js" />
+    <Content Include="app\test\unit\directives\feedbackTemplateDrct.spec.js" />
     <Content Include="app\test\unit\service\logResource.spec.js" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
@@ -117,6 +118,7 @@
     <Content Include="app\lib\bootstrap.min.js.map">
       <DependentUpon>bootstrap.min.js</DependentUpon>
     </Content>
+    <Content Include="app\test\unit\directives\feedbackDrct.spec.js" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
