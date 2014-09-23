@@ -25,4 +25,16 @@ describe('Log resource service', function() {
 
         expect(result).toBe(result);
     }));
+
+    it('Should POST logEntry to /service/calculationlog on addLogEntry', inject(function(logResource) {
+        var logEntry = { logEntry: "entry" };
+
+        $httpBackend.when('POST', '/service/calculationlog').respond(logEntry);
+
+        var result = logResource.addLogEntry(logEntry);
+
+        $httpBackend.flush();
+
+        expect(result).toMatch(logEntry);
+    }))
 });
