@@ -14,6 +14,12 @@ npm install -g karma-cli
 
 If node is installed by chocolatey, add the tools directory to your path. Example: C:\Chocolatey\lib\nodejs.commandline.0.10.32\tools
 
+To install all packages in package.json, type following in commandline:
+```
+npm install
+```
+
+The following commands were used to setup package.json:
 ```
 npm install karma --save-dev
 npm install karma-jasmine --save-dev
